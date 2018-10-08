@@ -27,7 +27,7 @@ jobs:
       - checkout
 
       - persist_to_workspace:
-          root: /
+          root: ~/app
           paths:
             - .
 
