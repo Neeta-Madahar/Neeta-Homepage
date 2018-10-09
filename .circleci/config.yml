@@ -19,7 +19,7 @@ jobs:
 
       - run:
           name: AWS Sync
-          command: aws --region eu-west-1 s3 mv ./build s3://neetamadahar.com/ --exclude yoga/ --acl public-read --delete || return 1
+          command: aws --region eu-west-1 s3 mv ./build s3://neetamadahar.com/ --exclude yoga/ --acl public-read
 
   checkout:
     <<: *vm_settings
