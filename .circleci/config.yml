@@ -20,8 +20,8 @@ jobs:
       - run:
           name: AWS Sync
           command: | 
-            aws --region eu-west-1 s3 sync ./build s3://neetamadahar.com/ --acl public-read --exact-timestamps --delete
-            aws --region eu-west-1 s3 sync s3://neetamadahar-yoga.com s3://neetamadahar.com/yoga --acl public-read --exact-timestamps --delete
+            aws --region eu-west-1 s3 sync ./build s3://neetamadahar.com/ --exact-timestamps --delete
+            aws --region eu-west-1 s3 sync s3://neetamadahar-yoga.com s3://neetamadahar.com/yoga --exact-timestamps --delete
 
   checkout:
     <<: *vm_settings
