@@ -26,7 +26,7 @@ body {
 .wrapper {
   height: 100%;
   max-width: 700px;
-  padding: 150px 100px 100px 170px;
+  padding: 15% 100px 100px 15%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -44,9 +44,8 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 40px;
-  /* text-shadow: 1px 1px 1px #6e6e6e; */
   font-family: 'Rubik', sans-serif;
-  padding: 10px 0 10px 0px;
+  padding: 25px 0;
 }
 
 @media only screen and (max-width: 600px) {
