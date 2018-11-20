@@ -35,12 +35,18 @@ body {
   -webkit-animation: YogaHero 18s ease infinite;
   animation: YogaHero 18s ease infinite;
   color: #FFFFFF;
-  padding: 150px 30px 10px;
+  padding: 30px 10px;
 }
 
-.hero h1 {
+.hero-link {
+  vertical-align: top;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.hero-title {
+  margin: 100px 0 0;
   vertical-align: bottom;
-  display: inline-block;
 }
 
 #body {
@@ -144,6 +150,16 @@ canvas {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+::selection {
+  background: #e71a8c;
+  color: #FFFFFF;
+}
+
+::-moz-selection {
+  background: #e71a8c;
+  color: #FFFFFF;
 }
 
 @keyframes YogaHero {
