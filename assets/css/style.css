@@ -15,6 +15,10 @@ body {
   background: #6e6e6e;
 }
 
+.privacy-policy {
+  background: #ffffff;
+}
+
 #screen {
   position: absolute;
   left: 0;
@@ -22,6 +26,32 @@ body {
   width: 100vw;
   height: 100vh;
   cursor: pointer;
+}
+
+.hero {
+  background: -webkit-gradient(linear,left bottom,left top,from(#ff9f1c),to(#e71a8c));
+  background: linear-gradient(0deg,#ff9f1c,#e71a8c);
+  background-size: 400% 400%;
+  -webkit-animation: YogaHero 18s ease infinite;
+  animation: YogaHero 18s ease infinite;
+  color: #FFFFFF;
+  padding: 150px 30px 10px;
+}
+
+.hero h1 {
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+#body {
+  padding: 30px;
+  min-height: 100vh;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+#body.body-loaded {
+  opacity: 1;
 }
 
 
@@ -76,6 +106,11 @@ canvas {
   box-sizing: border-box;
 }
 
+.privacy-policy .cookie-notice {
+  top: auto;
+  bottom: 0;
+}
+
 .cookie-notice__button {
   appearance: none;
   -moz-appearance: none;
@@ -109,4 +144,16 @@ canvas {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+@keyframes YogaHero {
+  0% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
 }

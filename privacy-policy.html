@@ -30,10 +30,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <body>
-    <h1>Privacy Policy</h1>
+  <body class="privacy-policy">
+    <div class="hero">
+      <h1>Privacy Policy</h1>
+    </div>
 
-    <div id="body">
+    <div id="body" aria-live="polite">
       Loading...
     </div>
 
@@ -68,9 +70,12 @@
           })
           .then(function (data) {
             var data = data.data.results[0].data.content;
-            body.innerHTML = PrismicDOM.RichText.asHtml(data)
+            body.innerHTML = PrismicDOM.RichText.asHtml(data);
+            body.className += ' body-loaded';
           })
           .catch(function (error) {
+            body.innerText = 'Error';
+            body.className += ' body-loaded';
             console.log(error);
           });
       }
