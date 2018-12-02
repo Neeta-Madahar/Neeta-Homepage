@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1348px" height="1236px" viewBox="0 0 1348 1236" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Metaballs - Main Art and Yoga Entry Homepage V1 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2667FF" offset="0%"></stop>
+            <stop stop-color="#3B0160" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="4.25623194%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#70C157" offset="0%"></stop>
+            <stop stop-color="#FFE05D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="2.27375361%" id="linearGradient-3">
+            <stop stop-color="#E71A8C" offset="0%"></stop>
+            <stop stop-color="#FF9F1C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Metaballs---Main-Art-and-Yoga-Entry-Homepage-V1-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-3" fill="url(#linearGradient-1)" transform="translate(734.000000, 767.000000) scale(1, -1) translate(-734.000000, -767.000000) " cx="734" cy="767" r="131"></circle>
+        <ellipse id="Oval" fill="url(#linearGradient-2)" fill-rule="nonzero" transform="translate(772.000000, 491.000000) scale(1, -1) translate(-772.000000, -491.000000) " cx="772" cy="491" rx="114" ry="109"></ellipse>
+        <ellipse id="Oval-Copy-5" fill="url(#linearGradient-2)" fill-rule="nonzero" transform="translate(441.500000, 562.500000) scale(1, -1) translate(-441.500000, -562.500000) " cx="441.5" cy="562.5" rx="209.5" ry="200.5"></ellipse>
+        <circle id="Oval-Copy-2" fill="url(#linearGradient-2)" fill-rule="nonzero" cx="106.5" cy="754.5" r="79.5"></circle>
+        <circle id="Oval-Copy" fill="url(#linearGradient-3)" fill-rule="nonzero" cx="392.5" cy="165.5" r="118.5"></circle>
+        <circle id="Oval-Copy-3" fill="url(#linearGradient-2)" fill-rule="nonzero" cx="937.5" cy="407.5" r="58.5"></circle>
+        <circle id="Oval-Copy-4" fill="url(#linearGradient-2)" fill-rule="nonzero" cx="1017.5" cy="131.5" r="131.5"></circle>
+        <circle id="Oval-4-Copy-5" fill="url(#linearGradient-2)" cx="126" cy="269" r="126"></circle>
+        <circle id="Oval-3-Copy" fill="url(#linearGradient-1)" cx="694" cy="206" r="155"></circle>
+        <circle id="Oval-4-Copy-3" fill="url(#linearGradient-3)" cx="865.5" cy="236.5" r="97.5"></circle>
+        <circle id="Oval-3-Copy-2" fill="url(#linearGradient-1)" cx="127.5" cy="536.5" r="100.5"></circle>
+        <circle id="Oval-3-Copy-3" fill="url(#linearGradient-3)" transform="translate(172.500000, 165.500000) scale(1, -1) translate(-172.500000, -165.500000) " cx="172.5" cy="165.5" r="55.5"></circle>
+        <circle id="Oval-3-Copy-7" fill="url(#linearGradient-1)" cx="186.5" cy="822.5" r="55.5"></circle>
+        <circle id="Oval-3-Copy-6" fill="url(#linearGradient-1)" transform="translate(1122.000000, 439.000000) scale(1, -1) translate(-1122.000000, -439.000000) " cx="1122" cy="439" r="109"></circle>
+        <circle id="Oval-4-Copy-2" fill="url(#linearGradient-3)" cx="1083" cy="757" r="265"></circle>
+        <circle id="Oval-4-Copy-7" fill="url(#linearGradient-3)" transform="translate(465.000000, 913.000000) scale(1, -1) translate(-465.000000, -913.000000) " cx="465" cy="913" r="126"></circle>
+        <circle id="Oval-4-Copy-4" fill="url(#linearGradient-3)" cx="1013" cy="1052" r="184"></circle>
+    </g>
+</svg>
