@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="/favicon.ico">
-  <title>Neeta Madahar - fine artist, Yoga and meditation teacher</title>
+  <title>Official Website of Neeta Madahar - fine artist, Yoga and meditation teacher</title>
 
-  <meta property="og:title" content="Neeta Madahar fine artist, yoga and meditation teacher">
+  <meta property="og:title" content="Official Website of Neeta Madahar - fine artist, Yoga and meditation teacher">
 
   <meta property="og:description" content="Interdisciplinary, primarily fine art photography, visual artist.
       Hatha Flow yoga and Natural Breath Awareness meditation teacher in Newbury, West Berkshire.
@@ -15,7 +15,9 @@
       happiness and wellbeing. Contact me about my art work, yoga classes or learning meditation.">
 
   <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/neetamadahar.assets.static/neeta-social.jpg">
-  <meta property="og:url" content="https://neetamadar.com">
+  <meta property="og:url" content="https://neetamadahar.com">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128817330-1"></script>
@@ -32,15 +34,51 @@
 </head>
 
 <body>
-
   <div class="wrapper">
+<<<<<<< HEAD
+    <img class="logo" src= "assets/images/logo.svg" />
+    <ul class="link-list">
+      <li>
+        <a href="/yoga" class="link">Yoga & Meditation</a>
+      </li>
+      <li>
+        <span class="link">Art (Coming Spring 2019)</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cookie-notice" id="cookie-notice">
+    <p>
+      This website uses cookies.
+      By continuing to use this website you are agreeing to our <a href="/privacy-policy">Privacy Policy</a>.
+    </p>
+
+    <button type="button" class="cookie-notice__button" id="cookie-dismiss">
+      <span aria-hidden="true">X</span>
+      <span class="sr-only">Dismiss notice</span>
+    </button>
+=======
     <img class="logo" src= "assets/images/logo.svg">
     <div class="link">Art (Coming Soon)</div>
     <a href="/yoga" class="link">Yoga & Meditation</a>
     <canvas id="screen">CANVAS metaballs</canvas>
+>>>>>>> 7d8c2bdada15237730dd6613eee7945b331c7990
   </div>
 
-  <script src="screen.js"></script>
-  <script src="app.js"></script>
+  <script src="assets/js/cookies.js"></script>
+
+  <script>
+    var d = document;
+    var cookieNotice = d.getElementById('cookie-notice');
+
+    if(!cookies.getCookie('notice-seen')) {
+      cookieNotice.style.display = 'flex';
+
+      d.getElementById('cookie-dismiss').addEventListener('click', function() {
+        cookies.setCookie('notice-seen', 'yes', 999);
+        cookieNotice.style.display = '';
+      });
+    }
+  </script>
 </body>
 </html>
