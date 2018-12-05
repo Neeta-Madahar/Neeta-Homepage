@@ -13,6 +13,7 @@ body {
   background-position: center -150px;
   margin: 0;
   height: 100vh;
+  color: #6e6e6e;
 
   display: flex;
   align-items: center;
@@ -23,8 +24,8 @@ body {
 }
 
 .hero {
-  background: -webkit-gradient(linear,left bottom,left top,from(#ff9f1c),to(#e71a8c));
-  background: linear-gradient(0deg,#ff9f1c,#e71a8c);
+  background: -webkit-gradient(linear,left bottom,left top,from(#70C157),to(#FFE05D));
+  background: linear-gradient(0deg,#70C157,#FFE05D);
   background-size: 400% 400%;
   -webkit-animation: YogaHero 18s ease infinite;
   animation: YogaHero 18s ease infinite;
@@ -91,6 +92,11 @@ a.link:focus {
   text-decoration: underline;
 }
 
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .cookie-notice {
   display: none;
   position: fixed;
@@ -102,11 +108,6 @@ a.link:focus {
   padding: 20px;
   justify-content: space-between;
   box-sizing: border-box;
-}
-
-.privacy-policy .cookie-notice {
-  top: auto;
-  bottom: 0;
 }
 
 .cookie-notice__button {
@@ -160,11 +161,6 @@ a.link:focus {
 
   .link {
     font-size: 40px;
-  }
-
-  .cookie-notice {
-    bottom: auto;
-    top: 0;
   }
 }
 
