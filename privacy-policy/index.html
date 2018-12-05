@@ -26,42 +26,30 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-128817330-1');
+      gtag('config', 'UA-128817330-1', { 'anonymize_ip': true});
     </script>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
   </head>
 
   <body class="privacy-policy">
     <div class="hero">
-      <a href="https://neetamadahar.com" class="hero-link">Return to NeetaMadahar.com</a>
-      <h1 class="hero-title">Privacy Policy</h1>
+      <div class="content">
+        <a href="/" class="hero-link">Return to NeetaMadahar.com</a>
+        <h1 class="hero-title">Privacy Policy</h1>
+      </div>
     </div>
 
-    <div id="body" aria-live="polite">
+    <div id="body" class="content" aria-live="polite">
       Loading...
     </div>
 
-    <div class="cookie-notice" id="cookie-notice">
-      <p>
-        This website uses cookies.
-        By continuing to use this website you are agreeing to our <a href="/privacy-policy">Privacy Policy</a>.
-      </p>
-
-      <button type="button" class="cookie-notice__button" id="cookie-dismiss">
-        <span aria-hidden="true">X</span>
-        <span class="sr-only">Dismiss notice</span>
-      </button>
-    </div>
-
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="assets/js/prismic-dom.min.js"></script>
-    <script src="assets/js/cookies.js"></script>
+    <script src="/assets/js/prismic-dom.min.js"></script>
 
     <script>
       var d = document;
       var body = d.getElementById('body');
-      var cookieNotice = d.getElementById('cookie-notice');
       var api = 'https://art-and-yoga.cdn.prismic.io/api/v2';
 
       if (axios && body) {
@@ -81,15 +69,6 @@
             body.className += ' body-loaded';
             console.log(error);
           });
-      }
-
-      if(!cookies.getCookie('notice-seen')) {
-        cookieNotice.style.display = 'flex';
-
-        d.getElementById('cookie-dismiss').addEventListener('click', function() {
-          cookies.setCookie('notice-seen', 'yes', 999);
-          cookieNotice.style.display = '';
-        });
       }
     </script>
   </body>
