@@ -211,6 +211,14 @@ a.link:focus {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chevron {
+  transform: rotate(180deg);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #fff;
+}
+
 .icon-chevron:before {
   content: "\e902";
 }
