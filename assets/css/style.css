@@ -13,6 +13,7 @@ body {
   background-position: center -150px;
   margin: 0;
   color: #6e6e6e;
+  font-size: 16px;
 }
 
 .privacy-policy {
@@ -53,7 +54,6 @@ body {
 #body.body-loaded {
   opacity: 1;
 }
-
 
 .wrapper {
   padding: 0 15px;
@@ -124,6 +124,17 @@ a.link:focus {
   font-size: 1rem;
 }
 
+.cookie-notice__wrapper {
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+}
+
 .cookie-notice p {
   margin: 0;
 }
@@ -165,6 +176,14 @@ a.link:focus {
 
   .link-list {
     margin: 0;
+  }
+
+  .cookie-notice__wrapper {
+    max-width: 950px;
+  }
+
+  body {
+    font-size: 18px;
   }
 }
 
