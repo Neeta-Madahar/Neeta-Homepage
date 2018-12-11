@@ -9,8 +9,8 @@ h1, h2, h3, h4, h5  {
 body {
   background-image: url("/assets/images/background.svg"),  url("/assets/images/background.svg"),  url("/assets/images/background.svg");
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center -160px, 100% -50px, -1130px -320px;
+  background-repeat: repeat;
+  background-position: center -150px;
   margin: 0;
   color: #6e6e6e;
 }
@@ -46,7 +46,6 @@ body {
 
 #body {
   padding: 30px;
-  min-height: 100vh;
   opacity: 0;
   transition: opacity .3s ease;
 }
@@ -60,6 +59,9 @@ body {
   padding: 0 15px;
   max-width: 845px;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -67,12 +69,14 @@ body {
   width:100%;
   max-width: 400px;
   margin-bottom: 15px;
+  margin-top: auto;
 }
 
 .link-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: auto;
 }
 
 .link-list li {
@@ -130,7 +134,6 @@ a.link:focus {
 
 .cookie-notice a:hover,
 .cookie-notice a:focus {
-  color: #ff9f1c;
   text-decoration: none;
 }
 
@@ -146,21 +149,22 @@ a.link:focus {
 }
 
 @media only screen and (min-width: 700px) {
-  body {
-    display: block;
-    height: auto;
-  }
-
   .wrapper {
     margin: 150px auto 0;
+    height: auto;
   }
 
   .logo {
     max-width: 520px;
+    margin-top: 0;
   }
 
   .link {
     font-size: 40px;
+  }
+
+  .link-list {
+    margin: 0;
   }
 }
 
@@ -172,6 +176,54 @@ a.link:focus {
 ::-moz-selection {
   background: #70C157;
   color: #FFFFFF;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('https://s3.us-east-2.amazonaws.com/neetamadahar-yoga.com/fonts/icomoon.eot?2zlulw');
+  src:  url('https://s3.us-east-2.amazonaws.com/neetamadahar-yoga.com/fonts/icomoon.eot?2zlulw#iefix') format('embedded-opentype'),
+  url('https://s3.us-east-2.amazonaws.com/neetamadahar-yoga.com/fonts/icomoon.ttf?2zlulw') format('truetype'),
+  url('https://s3.us-east-2.amazonaws.com/neetamadahar-yoga.com/fonts/icomoon.woff?2zlulw') format('woff'),
+  url('https://s3.us-east-2.amazonaws.com/neetamadahar-yoga.com/fonts/icomoon.svg?2zlulw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron {
+  transform: rotate(180deg);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.icon-chevron:before {
+  content: "\e902";
 }
 
 @keyframes YogaHero {
