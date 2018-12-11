@@ -19,6 +19,10 @@ body {
   background: #ffffff;
 }
 
+.privacy-policy #body a {
+  color: #70C157;
+}
+
 .hero {
   background: -webkit-gradient(linear,left bottom,left top,from(#70C157),to(#FFE05D));
   background: linear-gradient(0deg,#70C157,#FFE05D);
@@ -26,7 +30,7 @@ body {
   -webkit-animation: YogaHero 18s ease infinite;
   animation: YogaHero 18s ease infinite;
   color: #FFFFFF;
-  padding: 30px 10px;
+  padding: 30px;
 }
 
 .hero-link {
@@ -165,12 +169,12 @@ a.link:focus {
 }
 
 ::selection {
-  background: #e71a8c;
+  background: #70C157;
   color: #FFFFFF;
 }
 
 ::-moz-selection {
-  background: #e71a8c;
+  background: #70C157;
   color: #FFFFFF;
 }
 
