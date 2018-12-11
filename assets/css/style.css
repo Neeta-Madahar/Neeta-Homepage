@@ -7,20 +7,20 @@ h1, h2, h3, h4, h5  {
 }
 
 body {
-  background-image: url("/assets/images/background.svg");
+  background-image: url("/assets/images/background.svg"),  url("/assets/images/background.svg"),  url("/assets/images/background.svg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center -150px;
+  background-position: center -160px, 100% -50px, -1130px -320px;
   margin: 0;
-  height: 100vh;
   color: #6e6e6e;
-
-  display: flex;
-  align-items: center;
 }
 
 .privacy-policy {
   background: #ffffff;
+}
+
+.privacy-policy #body a {
+  color: #70C157;
 }
 
 .hero {
@@ -30,7 +30,7 @@ body {
   -webkit-animation: YogaHero 18s ease infinite;
   animation: YogaHero 18s ease infinite;
   color: #FFFFFF;
-  padding: 30px 10px;
+  padding: 30px;
 }
 
 .hero-link {
@@ -165,12 +165,12 @@ a.link:focus {
 }
 
 ::selection {
-  background: #e71a8c;
+  background: #70C157;
   color: #FFFFFF;
 }
 
 ::-moz-selection {
-  background: #e71a8c;
+  background: #70C157;
   color: #FFFFFF;
 }
 
